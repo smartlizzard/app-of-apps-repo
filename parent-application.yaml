@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/smartlizzard/app-of-apps-repo  # Replace with your actual GitHub account/repo URL
     path: .                                                  # Ensure this is the correct path to the directory with your apps
-    targetRevision: master                                     # Replace "main" with the correct branch or tag instead of "HEAD"
+    targetRevision: main                                   # Replace "main" with the correct branch or tag instead of "HEAD"
     directory:
       recurse: true                                          # Recurse through the repository for subdirectories
   destination:
