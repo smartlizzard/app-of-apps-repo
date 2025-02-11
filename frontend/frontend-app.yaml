@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/smartlizzard/sclass  # Replace with your GitHub account if needed
+    repoURL: https://f92b19f14ca0d73ed2fc55c3f8918707-3000.maxwell.assessments.scaler.com/john_doe/apps-of-apps.git  # Replace with your GitHub account if needed
     path: frontend                                 # Path within the repository
-    targetRevision: day-136-q14                                      # Replace "main" with the appropriate branch or tag
+    targetRevision: main                                     # Replace "main" with the appropriate branch or tag
   destination:
     server: https://kubernetes.default.svc                     # In-cluster Kubernetes API server
     namespace: default                          # Target namespace
