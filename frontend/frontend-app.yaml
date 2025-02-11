@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kustomize-guestbook
+  name: frontend
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/smartlizzard/argocd-example-apps  # Replace with your GitHub account if needed
-    path: kustomize-guestbook                                  # Path within the repository
-    targetRevision: master                                       # Replace "main" with the appropriate branch or tag
+    repoURL: https://github.com/smartlizzard/sclass  # Replace with your GitHub account if needed
+    path: frontend                                 # Path within the repository
+    targetRevision: day-136-q14                                      # Replace "main" with the appropriate branch or tag
   destination:
     server: https://kubernetes.default.svc                     # In-cluster Kubernetes API server
-    namespace: kustomize-guestbook                             # Target namespace
+    namespace: default                          # Target namespace
   syncPolicy:
     automated:
       prune: true                                              # Prune resources not in the source
