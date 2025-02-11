@@ -6,15 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/smartlizzard/app-of-apps-repo  # Replace with your actual GitHub account/repo URL
-    path: .                                                  # Ensure this is the correct path to the directory with your apps
-    targetRevision: main                                   # Replace "main" with the correct branch or tag instead of "HEAD"
+    repoURL: https://github.com/smartlizzard/app-of-apps-repo.git
+    path: .
+    targetRevision: test
     directory:
-      recurse: true                                          # Recurse through the repository for subdirectories
+      recurse: true
   destination:
-    server: https://kubernetes.default.svc                   # In-cluster Kubernetes API server
-    namespace: argocd                                        # Ensure this is the intended target namespace for ArgoCD
+    server: https://kubernetes.default.svc
+    namespace: default
   syncPolicy:
     automated:
-      prune: true                                            # Remove resources no longer defined in the repository
-      selfHeal: true 
+      prune: true
+      selfHeal: true
