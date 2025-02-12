@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://f92b19f14ca0d73ed2fc55c3f8918707-3000.maxwell.assessments.scaler.com/john_doe/apps-of-apps.git  # Replace with your GitHub account if needed
+    repoURL: https://d38657fce7a08d35f52bfd3f7dfd21cb-3000.maxwell.assessments.scaler.com/john_doe/apps-of-apps.git  # Replace with your GitHub account if needed
     path: backend                                 # Path within the repository
     targetRevision: main                                     # Replace "main" with the appropriate branch or tag
   destination:
